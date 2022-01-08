@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <Link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Sign Up Form</h1>
+
+    <!--Form-->
+    <form action="#" onsubmit=" return formValidation()">
+       
+        <!--First Name Input-->
+        <div>
+            <label>First Name</label>
+            <input autocomplete="off" maxlength="45" type="text" id="firstName">
+            <br>
+            <span id="firstNameSpan"></span>
+        </div>
+
+        <!--Last Name Input-->
+        <div>
+            <label>Last Name</label>
+            <input autocomplete="off" maxlength="45" type="text" id="lastName">
+            <br>
+            <span id="lastNameSpan"></span>
+
+        </div>
+
+        <!--Gender RadioButton-->
+        <div>
+            <p>Gender</p>
+
+            <label for="Male" >Male</label>
+            <input name="radio" value="Male" type="radio">
+
+            <label for="Female">Female</label>
+            <input name="radio" value="Female" type="radio">
+
+            <label for="Other">Other</label>
+            <input name="radio" value="Other" type="radio">
+
+            <br>
+
+            <span id="genSpan"></span>
+
+        </div>
+
+        <!--Country Dropdown-->
+        <div>
+            <p>Select Country</p>
+            <select id="country">
+                <option selected value="select">Select Option</option>
+                <option>India</option>
+                <option>Pakistan</option>
+                <option>Turkey</option>
+                <option>Qatar</option>
+                <option>Saudi Arabia</option>
+            </select>
+            <br>
+            <span id="conSpan"></span>
+        </div>
+
+
+        <!--Hobbies Checkbox-->
+        <div>
+            <p>Your Hobbies</p>
+
+            <input value="Music" type="checkbox" name="checkbox">
+            <label for="Music">Music</label>
+
+            <br>
+
+            <input value="Coding" type="checkbox" name="checkbox">
+            <label for="Coding" >Coding</label>
+
+            <br>
+
+            <input value="Reading" type="checkbox" name="checkbox">
+            <label for="Reading">Reading</label>
+
+            <br>
+            <span id="hobCheck"></span>
+        </div>
+
+        <button type="submit" name="submit" value="submit" onsubmit="return formsubmit()">Submit</button>
+
+       
+        
+    </form>
+
+
+    <script src="script.js">
+
+    </script>
+    
+</body>
+</html>
